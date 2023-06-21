@@ -1,6 +1,43 @@
-# TITLE: A Scientific Machine Learning Framework to Understand Flash Graphene Synthesis 
+# TITLE: A Scientific ML Framework to Understand Flash Graphene Synthesis 
 ## Submitted to Digital Discovery journal. 
 
-Flash Joule heating (FJH) is a far-from-equilibrium (FFE) processing method for converting low-value carbon-based materials to flash graphene (FG). Despite its promise in scalability and performance, attempts to explore the reaction mechanism have been limited due to complexity involved in the FFE process. Data-driven machine learning (ML) models effectively account for this complexity, but the model training requires considerable amount of experimental data. To tackle this challenge, we constructed a scientific ML (SML) framework trained by using both direct processing variables and indirect, physics-informed variables to predict the FG yield. The indirect variables include current-derived features (final current, maximum current, and charge density) predicted from the proxy ML models and reaction temperatures simulated from multi-physics modeling. With the combined indirect features, the final ML model achieves an average R2 score of 0.81 ± 0.05 and an average RMSE of 12.1% ± 2.0% in predicting the FG yield, which is significantly higher than the model trained without them (R2 of 0.73 ± 0.05 and an RMSE of 14.3% ± 2.0%). Feature importance analysis validates the key roles of these indirect features in determining the reaction outcome. These results illustrate the promise of this SML to elucidate FFE material synthesis outcomes, thus paving a new avenue to processing other datasets from the materials systems involving the same or different FFE processes.
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
-# Folder Simulation contains simulation input vairables for each sample. The simulation file in COMSOL is very large. It can be accessed through request to Dr. Jian Lin. 
+- [Overview](#overview)
+- [System Requirements](#system-requirements)
+- [Installation Guide](#installation-guide)
+- [Files Guidance](#files-guidance)
+- [License](#license)
+
+# Overview
+
+
+# System Requirements
+## Software requirements
+### Python Dependencies
+`RRCGAN` mainly depends on the Python scientific stack, Keras form Tensorflow, and chemistry tools chainer chemistry and RDKit.
+
+```
+numpy
+scipy
+scikit-learn
+pandas
+seaborn
+sklearn
+matplotlib
+
+# Files Guidance
+
+## directory: ./
+SML_final.ipynb: contains the main code for running the experiment in Jupyter notebook. It contains blocks of code for regenerating the figures in the manuscript. It saves each figure in the correct directory. 
+
+## directory: ./Time_current_property_extraction
+contains one sample of current-time curve and a code for extracting I_max, I_final, Charge Density, and I_mean. 
+## directory: ./Simulation 
+contains simulation input variables for each sample. The simulation file in COMSOL is very large. It can be accessed through request to Dr. Jian Lin. 
+## directory: ./Fig*
+contains figures generated in the main file 
+
+
+# License
+This project is covered under the **GNU General Public License v3.0**.  The details of the used License is in License file. 
