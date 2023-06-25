@@ -1,10 +1,10 @@
-# TITLE: A Scientific ML Framework to Understand Flash Graphene Synthesis 
+﻿# TITLE: A Scientific ML Framework to Understand Flash Graphene Synthesis 
 ## Submitted to Digital Discovery journal. 
 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
 - [Overview](#overview)
-- [System Requirements](#system-requirements)
+- [Python Dependencies](#Python-dependencies)
 - [Installation Guide](#installation-guide)
 - [Files Guidance](#files-guidance)
 - [License](#license)
@@ -12,10 +12,7 @@
 # Overview
 
 
-# System Requirements
-## Software requirements
-### Python Dependencies
-`RRCGAN` mainly depends on the Python scientific stack, Keras form Tensorflow, and chemistry tools chainer chemistry and RDKit.
+# Python Dependencies
 
 ```
 numpy
@@ -25,6 +22,7 @@ pandas
 seaborn
 sklearn
 matplotlib
+```
 
 # Files Guidance
 
